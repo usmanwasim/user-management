@@ -25,11 +25,11 @@ app.use("/api/users", userRoutes);
 // Serve Vite build
 const __dirname = path.resolve();
 
-app.use(express.static(path.join(__dirname, "public/dist")));
+app.use(express.static(path.join(__dirname, "public", "dist")));
 
 // SPA fallback
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public/dist/index.html"));
+  res.sendFile(path.join(__dirname, "public", "dist", "index.html"));
 });
 
 export default app;
