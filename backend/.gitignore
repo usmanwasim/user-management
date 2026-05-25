@@ -34,8 +34,8 @@ coverage
 # =====================
 # Build output (if using TS or build step)
 # =====================
-dist
-build
+# dist
+# build
 
 # =====================
 # OS / IDE
