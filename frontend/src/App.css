@@ -1,0 +1,28 @@
+.table-wrapper {
+  max-height: 550px;
+  overflow-y: auto;
+  border: 1px solid black;
+}
+
+th,
+td {
+  border: none;
+  padding: 7px;
+  text-align: left;
+}
+th {
+  background-color: #c5c4c4;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px !important;
+  /* border: none !important; */
+}
+tr {
+  border-bottom: 1px solid black !important;
+}
