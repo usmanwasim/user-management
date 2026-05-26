@@ -44,8 +44,8 @@ const Home = () => {
       setUsers(data.users);
       setTotal(data.total);
     } catch (error) {
-      if (err.name === "AbortError") return;
-      console.error(err);
+      if (error.name === "AbortError") return;
+      console.error("[error]", error);
     }
   };
 
@@ -67,6 +67,7 @@ const Home = () => {
     try {
       await toggleUserStatus(id);
     } catch (e) {
+      console.error("[error]", e);
       fetchUsers();
     }
   };
